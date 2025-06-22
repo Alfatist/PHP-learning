@@ -26,13 +26,20 @@
       $divisor = $_GET['divisor'] ?? null;
 
       if($dividendo !== null && $divisor !== null){
+        if($divisor == 0) {
+        echo "<section>"
+        ."Dividendo: $dividendo<br>"
+        ."Divisor: $divisor<br>"
+        ."Quociente: ∞<br>"
+        ."Resto: ∞";
+        }
+        else {
         echo "<section>"
         ."Dividendo: $dividendo<br>"
         ."Divisor: $divisor<br>"
         ."Quociente: ". floor($dividendo/$divisor)."<br>"
-        ."Resto: ".$dividendo%$divisor
-        ;
-
+        ."Resto: ".$dividendo%$divisor;
+        }
       }
     ?>
 
