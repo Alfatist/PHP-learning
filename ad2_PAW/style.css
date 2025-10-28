@@ -1,0 +1,147 @@
+
+:root {
+  --bg: #f5f7fa;
+  --card: #fff;
+  --text: #2c3e50;
+  --accent: #2980b9;
+  --accent-hover: #1f6391;
+  --border: #dfe6e9;
+  --success: #27ae60;
+  --danger: #c0392b;
+  --shadow: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg);
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+}
+
+header {
+  background-color: var(--accent);
+  color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px var(--shadow);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--shadow);
+  padding: 2rem;
+}
+
+h2 {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 0.6rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+th {
+  background: var(--accent);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f9fbfd;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+button, input[type=submit], .btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+button:hover, input[type=submit]:hover, .btn:hover {
+  background: var(--accent-hover);
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.alert {
+  background: var(--danger);
+  color: white;
+  padding: 0.7rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav-links a {
+  background: var(--accent);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+.nav-links a:hover {
+  background: var(--accent-hover);
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+}
